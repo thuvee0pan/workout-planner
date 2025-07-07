@@ -1,16 +1,75 @@
-# app_101
+# Workout Planner App
 
-A new Flutter project.
+A simple Flutter app to plan, track, and manage your weekly workouts. This app is designed to help you organize your training routine using a classic split (Push/Pull/Legs) and supports both strength and cardio exercises.
+
+---
+
+## MVP Features
+
+### 1. **Weekly Workout Plan**
+- Preloaded with a 6-day split workout plan (Push/Pull/Legs).
+- Each day contains warmup, main, and accessory exercises.
+- Workouts can be strength or cardio, with support for sets, reps, and time-based activities.
+
+### 2. **Today’s View**
+- Automatically displays the workouts scheduled for the current day.
+- Shows exercise details, including type, sets, reps, and time.
+- Uses icons and colors to visually distinguish workout types.
+
+### 3. **Week View**
+- View and manage the full week’s workout schedule.
+- Add, edit, or remove workouts for any day.
+- Select workout type from a dropdown (warmup, main, accessory, cardio, strength, other).
+- Input fields adapt based on workout type (sets/reps for strength, time for cardio).
+
+### 4. **Persistent Storage**
+- All workout data is saved locally using SharedPreferences.
+- Preloaded plan is only loaded on first launch; user changes are preserved.
+
+---
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+1. **Clone the repository:**
+   ```sh
+   git clone git@github.com:thuvee0pan/workout-planner.git
+   cd workout-planner
+   ```
 
-A few resources to get you started if this is your first Flutter project:
+2. **Install dependencies:**
+   ```sh
+   flutter pub get
+   ```
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+3. **Run the app:**
+   ```sh
+   flutter run
+   ```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+---
+
+## Tech Stack
+
+- **Flutter** (UI)
+- **Provider** (State management)
+- **SharedPreferences** (Local storage)
+
+---
+
+## Future Improvements
+
+- Workout history and logging
+- Custom workout templates
+- Progress tracking and analytics
+- Cloud sync and user authentication
+
+---
+
+## License
+
+MIT
+
+---
+
+**MVP Summary:**  
+This app lets you view, add, and edit a week’s worth of workouts, see today’s plan, and persist your data locally. It’s a focused, easy-to-use MVP for anyone wanting to organize their training routine.
